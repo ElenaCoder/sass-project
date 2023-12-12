@@ -1,0 +1,17 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #e1d4c9;
+$dark-color: #403f3d;
+$background-color: #c1b6ad;
+$accent-color: #b0907a;
+
+// Set text color based on background
+
+@function set-text-color($color) {
+    @if (lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+
