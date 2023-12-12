@@ -1,0 +1,189 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #e1d4c9;
+  padding: 0 30px;
+  overflow: auto;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.btn-secondary, .btn-primary {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+.hover.btn-secondary, .hover.btn-primary {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #f0e9e3;
+}
+
+.btn-secondary {
+  background-color: #c1b6ad;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #403f3d;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: #c1b6ad;
+  height: 100vh;
+}
+.showcase nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcase nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.showcase nav li {
+  padding: 15px;
+}
+.showcase nav li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -0.3125rem; /* Equivalent to 5px */
+  height: 0.125rem; /* Equivalent to 2px */
+  background-color: #403f3d;
+  transition: left 0.35s ease, right 0.35s ease;
+}
+.showcase nav li a:hover::after {
+  left: 0;
+  right: 0;
+}
+.showcase a {
+  color: #403f3d;
+  font-weight: 600;
+  position: relative;
+}
+.showcase-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.showcase-content h1 {
+  font-size: 50px;
+  color: #b0907a;
+  line-height: 1.25;
+}
+.showcase-content img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    height: 400px;
+  }
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content img {
+    display: none;
+  }
+}
